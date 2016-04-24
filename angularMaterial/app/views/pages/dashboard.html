@@ -20,109 +20,10 @@
                 </li>
               </ul>
             </div>
-            <div class="card-body">
-              <div class="row" ng-controller="ChartCtrl">
-                <div class="col-sm-6">
-                  <div class="text-center">
-                    Server Status
-                  </div>
-                  <div class="p-md">
-                    <div ui-jp="plot" ui-options="
-                      [
-                        { data: {{plot_line}} },
-                        { data: {{plot_line_2}} }
-                      ], 
-                      {
-                        bars: { show: true, fill: true,  barWidth: 0.4, lineWidth: 1, order: 1, fillColor: { colors: [{ opacity: 0.5 }, { opacity: 0.9}] } },
-                        colors: ['{{app.color.primary}}','{{app.color.success}}'],
-                        series: { shadowSize: 3 },
-                        xaxis: { show: true, font: { color: '#ccc' }, position: 'bottom' },
-                        yaxis:{ show: true, font: { color: '#ccc' }},
-                        grid: { hoverable: true, clickable: true, borderWidth: 0, color: '#ccc' },
-                        tooltip: true,
-                        tooltipOpts: { content: '%x.0 is %y.4',  defaultTheme: false, shifts: { x: 0, y: -40 } }
-                      }
-                    " style="height:160px" >
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="text-center">
-                    Client Overview
-                  </div>
-                  <div class="p-md">
-                    <div ui-jp="plot" ui-options="
-                      {{plot_pie}},
-                      {
-                        series: { pie: { show: true, innerRadius: 0.55, stroke: { width: 3 }, label: { show: true, threshold: 0.05 } } },
-                        colors: ['{{app.color.primary}}','{{app.color.success}}'],
-                        grid: { hoverable: true, clickable: true, borderWidth: 0, color: '#ccc' },   
-                        tooltip: true,
-                        tooltipOpts: { content: '%s: %p.0%' }
-                      }
-                    " style="height:160px"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
+
           </div>
         </div>
-        <div class="col-xs-6">
-          <div class="card {{app.setting.theme.primary}}">
-            <div class="card-heading">
-              <h2>Popular</h2>
-              <small>What you would like</small>
-            </div>
-            <div class="list-group list-group-lg no-bg">
-              <a href class="list-group-item text-ellipsis">
-                <span class="pull-right">
-                  <i class="mdi-action-trending-up i-20 text-muted-dk"></i>
-                </span>
-                #TheWalkingDead
-              </a>
-              <a href class="list-group-item text-ellipsis">
-                <span class="pull-right">
-                  <i class="mdi-action-trending-neutral i-20 text-muted-dk"></i>
-                </span>
-                #Survivor
-              </a>
-              <a href class="list-group-item text-ellipsis">
-                <span class="pull-right">
-                  <i class="mdi-action-trending-down i-20 text-muted-dk"></i>
-                </span>
-                #Whitehouse
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-6">
-          <div class="card {{app.setting.theme.accent}}">
-            <div class="card-heading">
-              <h2>Top Search</h2>
-              <small>Something really cool</small>
-            </div>
-            <div class="list-group list-group-lg no-bg">
-              <a href class="list-group-item">
-                <span class="pull-right">
-                  1
-                </span>
-                #Story
-              </a>
-              <a href class="list-group-item">
-                <span class="pull-right">
-                  2
-                </span>
-                #Nature
-              </a>
-              <a href class="list-group-item">
-                <span class="pull-right">
-                  3
-                </span>
-                #Sleeping
-              </a>
-            </div>
-          </div>
-        </div>
+
       </div>
       <div class="row row-sm">
         <div class="col-sm-12">
@@ -226,7 +127,7 @@
       </div>
     </div>
     <div class="col-lg-3 col-md-4 col-sm-4">
-      <div class="card">
+<!--      <div class="card">
         <form>
           <textarea class="form-control no-border p-md" rows="1" placeholder="Write something..."></textarea>
         </form>
@@ -237,7 +138,7 @@
             <li><a href><i class="fa fa-video-camera"></i></a></li>
           </ul>
         </div>
-      </div>
+      </div>-->
       <div class="card">
         <div class="card-heading">
           <h2>Activities</h2>

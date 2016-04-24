@@ -12173,7 +12173,7 @@ var jp_config = {
                     'bower_components/flot-spline/js/jquery.flot.spline.min.js',
                     'bower_components/flot.orderbars/js/jquery.flot.orderBars.js'],
   vectorMap:      [ 'bower_components/bower-jvectormap/jquery-jvectormap-1.2.2.min.js',
-                    'bower_components/bower-jvectormap/jquery-jvectormap.css', 
+                    'bower_components/bower-jvectormap/jquery--1.2.2.css', 
                     'bower_components/bower-jvectormap/jquery-jvectormap-world-mill-en.js',
                     'bower_components/bower-jvectormap/jquery-jvectormap-us-aea-en.js' ],
   dataTable:      [

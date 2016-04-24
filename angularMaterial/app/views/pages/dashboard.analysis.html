@@ -56,27 +56,7 @@
         </div>
       </div>
     </div>
-    <div class="col-sm-4">
-      <div class="panel panel-card p m-b-sm">
-        <h5 class="no-margin m-b">Sells</h5>
-        <div class="text-center" ng-controller="ChartCtrl">
-            <div ui-jp="plot" ui-options="
-              {{plot_pie}},
-              {
-                series: { pie: { show: true, innerRadius: 0.4, stroke: { width: 3 }, label: { show: true, threshold: 0.05 } } },
-                colors: ['{{app.color.info}}','{{app.color.warning}}','{{app.color.success}}','{{app.color.accent}}'],
-                grid: { hoverable: true, clickable: true, borderWidth: 0, color: '#ccc' },   
-                tooltip: true,
-                tooltipOpts: { content: '%s: %p.0%' }
-              }
-            " style="height:168px"></div>
-        </div>
-        <div class="m-t-xs">
-          <div class="font-bold">$432,000</div>
-          <small class="text-muted">This month</small>
-        </div>
-      </div>
-    </div>
+
   </div>
   <div class="row row-xs" ng-controller="ChartCtrl">
     <div class="col-sm-4">
