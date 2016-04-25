@@ -44,12 +44,7 @@ angular.module('app')
                                     data: {title: 'Dashboard', folded: true},
                                     resolve: load(['scripts/controllers/vectormap.js'])
                                 })
-                                .state('app.analysis', {
-                                    url: '/analysis',
-                                    templateUrl: 'views/pages/dashboard.analysis.html',
-                                    data: {title: 'Analysis'},
-                                    resolve: load(['scripts/controllers/chart.js', 'scripts/controllers/vectormap.js'])
-                                })
+                               
                                 .state('app.wall', {
                                     url: '/wall',
                                     templateUrl: 'views/pages/dashboard.wall.html',
@@ -357,22 +352,8 @@ angular.module('app')
                                     url: '/map',
                                     template: '<div ui-view></div>'
                                 })
-                                .state('ui.map.google', {
-                                    url: '/google',
-                                    templateUrl: 'views/ui/map/google.html',
-                                    data: {title: 'Gmap'},
-                                    controller: 'GoogleMapCtrl',
-                                    resolve: load(['ui.map', 'scripts/controllers/load-google-maps.js', 'scripts/controllers/googlemap.js'], function () {
-                                        return loadGoogleMaps();
-                                    })
-                                })
-                                .state('ui.map.vector', {
-                                    url: '/vector',
-                                    templateUrl: 'views/ui/map/vector.html',
-                                    data: {title: 'Vector'},
-                                    controller: 'VectorMapCtrl',
-                                    resolve: load('scripts/controllers/vectormap.js')
-                                })
+                                    
+                              
 
                                 .state('page', {
                                     url: '/page',
@@ -398,24 +379,14 @@ angular.module('app')
                                     templateUrl: 'views/pages/settings.html',
                                     data: {title: 'Settings'}
                                 })
-                                .state('page.blank', {
-                                    url: '/blank',
-                                    templateUrl: 'views/pages/blank.html',
-                                    data: {title: 'Blank'}
-                                })
+                                
                                 .state('page.document', {
                                     url: '/document',
                                     templateUrl: 'views/pages/document.html',
                                     data: {title: 'Document'}
                                 })
-                                .state('404', {
-                                    url: '/404',
-                                    templateUrl: 'views/pages/404.html'
-                                })
-                                .state('505', {
-                                    url: '/505',
-                                    templateUrl: 'views/pages/505.html'
-                                })
+                                
+                                
                                 .state('access', {
                                     url: '/access',
                                     template: '<div class="indigo bg-big"><div ui-view class="fade-in-down smooth"></div></div>'
